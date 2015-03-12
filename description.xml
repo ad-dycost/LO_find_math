@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="https://github.com/ad-dycost/LO_find_math"
+		xmlns:xlink="http://www.w3.org/1999/xlink">
+	<update-information>
+		<src xlink:href="https://github.com/ad-dycost/LO_find_math/FindMath.update.xml" />
+	</update-information>
+	<version value="0.1" />
+	<identifier value="FindMath.addon" />
+	<display-name>
+		 <name lang="en">Find and replace in Math object</name>
+		 <name lang="ru">Поиск и замена в формулах Math</name>
+	 </display-name>
+	<icon>
+		<default xlink:href="img/icon.png" />
+	 </icon>
+
+</description>

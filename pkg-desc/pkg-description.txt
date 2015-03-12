@@ -1,0 +1,4 @@
+FindMath
+
+Copyright (c) 2015 Andrey Degtyarev
+Find and replace in Math object
