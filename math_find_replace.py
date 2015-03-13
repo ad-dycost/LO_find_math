@@ -105,3 +105,8 @@ class Main():
 
 def main():
 	a = Main()
+
+# pythonloader looks for a static g_ImplementationHelper variable
+g_ImplementationHelper = unohelper.ImplementationHelper()
+
+g_ImplementationHelper.addImplementation(Main, 'vnd.math_find_replace', ('com.sun.star.task.Job',),)

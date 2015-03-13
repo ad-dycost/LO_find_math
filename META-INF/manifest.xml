@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest:manifest>
+	<manifest:file-entry manifest:media-type="application/vnd.sun.star.configuration-data" manifest:full-path="addons.xcu"/>
 	<manifest:file-entry manifest:full-path="pkg-desc/pkg-description.txt" manifest:media-type="application/vnd.sun.star.package-bundle-description"/>
 	<manifest:file-entry manifest:media-type="application/vnd.sun.star.uno-component;type=Python" manifest:full-path="math_find_replace.py"/>
 </manifest:manifest>

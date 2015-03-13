@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data 
+ xmlns:oor="http://openoffice.org/2001/registry"
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ oor:name="addons"
+ oor:package="org.openoffice.Office">
+	<node oor:name="AddonUI">
+		<node oor:name="AddonMenu">
+				<node oor:name="name.FindMath" oor:op="replace">
+					<prop oor:name="Context" oor:type="xs:string">
+						<value>com.sun.star.text.TextDocument,com.sun.star.text.WebDocument</value>
+					</prop>
+					<prop oor:name="URL" oor:type="xs:string">
+						<value>service:vnd.search_in_calc?execute</value>
+					</prop>
+					<prop oor:name="Title" oor:type="xs:string">
+						<value>Find and replace in Math object</value>
+						<value xml:lang="ru">Поиск и замена в формулах Math</value>
+					</prop>
+					<prop oor:name="Target" oor:type="xs:string">
+						<value>_self</value>
+					</prop>
+				</node>
+		</node>
+		<node oor:name="OfficeMenuBarMerging">
+			<node oor:name="name.FindMath" oor:op="replace">
+				<node oor:name="S1" oor:op="replace">
+					<prop oor:name="MergePoint">
+						<value>.uno:EditMenu\.uno:SearchDialog</value>
+					</prop>
+					<prop oor:name="MergeCommand">
+						<value>AddAfter</value>
+					</prop>
+					<prop oor:name="MergeFallback">
+						<value>AddPath</value>
+					</prop>
+					<prop oor:name="MergeContext" oor:type="xs:string">
+						<value>com.sun.star.text.TextDocument,com.sun.star.text.WebDocument</value>
+					</prop>
+					<node oor:name="MenuItems">
+						<node oor:name="M1" oor:op="replace">
+							<prop oor:name="Title" oor:type="xs:string">
+								<value xml:lang="en">Find and replace in Math object</value>
+								<value xml:lang="ru">Поиск и замена в формулах Math</value>
+							</prop>
+							<prop oor:name="Target" oor:type="xs:string">
+								<value>_self</value>
+							</prop>
+							<prop oor:name="ImageIdentifier" oor:type="xs:string">
+								<value>%origin%/img/icon</value>
+							</prop>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+</oor:component-data>
